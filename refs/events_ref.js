@@ -1,10 +1,12 @@
-const EventEmitter= require('events')
+const EventEmitter = require('events')
 
 class Logger extends EventEmitter {
     log(message) {
-        this.emit('message', `${message} ${Date.now()}`)
+        this.emit('message', `${message}, ${Date.now()}`)
     }
+
 }
+
 
 const logger = new Logger()
 
