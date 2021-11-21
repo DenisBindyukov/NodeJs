@@ -1,10 +1,11 @@
  const path = require('path')
+ const {log} = require("nodemon/lib/utils");
 
- //console.log(__filename)
-  //console.log(path.basename(__filename))
- //console.log(path.dirName(__filename))
-// console.log(path.parse(__filename))
- //console.log(path.extname(__filename))
- //console.log(path.parse(__filename))
- //console.log(path.join(__dirname, 'test', 'second.html'))
- console.log(path.resolve(__dirname, './test', 'second.html'))
+ //_dirname папка в которой мы ведём разработку.
+
+ console.log(__filename)
+ console.log(path.basename(__filename))
+ console.log(path.parse(__filename).base)
+ console.log (path.join(__dirname, 'test', 'second.html'))  // генерация пути (папка, папка, файл)
+ console.log(path.resolve(__dirname, 'test', 'second.html')) // аналогичный метод методу join, служит также для генерации пути
+
