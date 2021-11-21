@@ -1,3 +1,6 @@
+import { writeFile } from 'fs';
+import { Buffer } from 'buffer';
+
 const path = require('path')
 const fs = require('fs')  //File System
 
@@ -7,31 +10,12 @@ const fs = require('fs')  //File System
 //     console.log('The folder created')
 // });
 
-//
-// fs.mkdir(path.join(__dirname, 'notes'), (err) => {
-//     if (err) throw new Error(err)
-//
-//     console.log('Folder was created')
-//
-
-// fs.write(
-//     path.join(__dirname, 'notes', 'mynote.txt'),
+// fs.appendFile(path.join(__dirname, 'notes', 'mynotes.txt'),
 //     'Hello world',
 //     (err) => {
 //         if (err) throw err
-//         console.log('Файл был создан')
-//
-//          fs.append(
-//              path.join(__dirname, 'notes', 'mynotes.txt'),
-//              'From append file',
-//              (err) => {
-//                  if (err) throw err
-//                  console.log('File was change')
-//              }
-//          )
-//     }
-// )
-//
-// fe.readFile(
-//     path.join(__dirname, 'notes', 'mynotes.txt ')
-// )
+//         console.log('File was created')
+//     })
+
+
+fs.readFile()
